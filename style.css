@@ -5,7 +5,7 @@ s*{
 body {
   background-color: #1d41e2;
 }
-
+/* beginning of gallery CSS */
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -54,7 +54,7 @@ div.desc {
   display: table;
   clear: both;
 }
-
+/* end of gallery CSS */
 table, th, td {
   border-collapse: collapse;
   text-align: center;

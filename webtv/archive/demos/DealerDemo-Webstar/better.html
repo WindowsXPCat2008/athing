@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="Refresh" CONTENT="keypressed; URL=menu.html?select=4">
+
+	<script>
+		if (navigator.haveLocalResource("file://disk/DemoVideo/better.mpg")) {
+			document.write('<META HTTP-EQUIV="Refresh" CONTENT="animationscomplete; URL=menu.html?select=4">');
+		}
+	</script>
+
+	<TITLE>Better control</TITLE>
+
+	<DISPLAY NOLOGO NOOPTIONS>
+</HEAD>
+
+<BODY BGCOLOR="#000000">
+
+	<A HREF="menu.html?select=4" NOHIGHLIGHT>
+		<script>
+			if (navigator.haveLocalResource("file://disk/DemoVideo/better.mpg")) {
+				document.write('<tv width=100% height=100% SRC="file://disk/DemoVideo/better.mpg">');
+            } else {
+                location.href = "file://disk/demo/noVideo.html";
+            }
+        </script>
+	</A>
+
+</BODY>
+</HTML>

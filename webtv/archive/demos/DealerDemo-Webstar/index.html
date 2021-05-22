@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+
+	<META HTTP-EQUIV="Refresh" CONTENT="keypressed; URL=overview.html">
+	<TITLE>Attract Loop</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#000000">
+
+	<display nologo nooptions>
+
+	<A HREF="overview.html" NOHIGHLIGHT>
+		<script>
+			if (navigator.haveLocalResource("file://disk/DemoVideo/attract.mpg")) {
+				document.write('<tv width=100% height=100% SRC="file://disk/DemoVideo/attract.mpg" LOOP>');
+            } else {
+                location.href = "file://disk/demo/menu.html?select=5";
+            }
+        </script>
+    </A>
+
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="Refresh" CONTENT="keypressed; URL=menu.html?select=3">
+
+	<script>
+		if (navigator.haveLocalResource("file://disk/DemoVideo/email.mpg")) {
+			document.write('<META HTTP-EQUIV="Refresh" CONTENT="animationscomplete; URL=menu.html?select=3">');
+		}
+	</script>
+
+	<TITLE>E-Mail</TITLE>
+
+	<DISPLAY NOLOGO NOOPTIONS>
+</HEAD>
+
+<BODY BGCOLOR="#000000">
+
+	<A HREF="menu.html?select=3" NOHIGHLIGHT>
+		<script>
+			if (navigator.haveLocalResource("file://disk/DemoVideo/email.mpg")) {
+				document.write('<tv abswidth=100% absheight=100% SRC="file://disk/DemoVideo/email.mpg">');
+            } else {
+                location.href = "file://disk/demo/noVideo.html";
+            }
+        </script>
+	</A>
+
+</BODY>
+</HTML>

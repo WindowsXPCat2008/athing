@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="Refresh" CONTENT="keypressed; URL=menu.html?select=2">
+
+	<script>
+		if (navigator.haveLocalResource("file://disk/DemoVideo/internet.mpg")) {
+			document.write('<META HTTP-EQUIV="Refresh" CONTENT="animationscomplete; URL=menu.html?select=2">');
+		}
+	</script>
+
+	<TITLE>Internet</TITLE>
+
+	<DISPLAY NOLOGO NOOPTIONS>
+</HEAD>
+
+<BODY BGCOLOR="#000000">
+
+	<A HREF="menu.html?select=2" NOHIGHLIGHT>
+		<script>
+
+			if (navigator.haveLocalResource("file://disk/DemoVideo/internet.mpg")) {
+				document.write('<tv width=100% height=100% SRC="file://disk/DemoVideo/internet.mpg">');
+            } else {
+                location.href = "file://disk/demo/noVideo.html";
+            }
+        </script>
+	</A>
+
+</BODY>
+</HTML>

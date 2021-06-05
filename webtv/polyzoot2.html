@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>PolyZoot 2!</title>
+</head>
+<script>
+var	xOffset = 5;
+var	yOffset = 5;
+
+function animate() {
+	var	aniStyle = document.all["animator"].style;
+
+	var newLeft = aniStyle.posLeft + xOffset;
+	var newTop = aniStyle.posTop + yOffset;
+	
+	if ((newLeft + aniStyle.posWidth) > window.innerWidth)
+		xOffset = -5;
+	else if (newLeft < 0)
+		xOffset = 5;
+		
+	if ((newTop + aniStyle.posHeight) > window.innerHeight)
+		yOffset = -5;
+	else if (newTop < 0)
+		yOffset = 5;
+		
+	aniStyle.posLeft = newLeft;
+	aniStyle.posTop = newTop;
+	
+	setTimeout("animate()", 1);
+	
+}
+</script>
+<display hideoptions notvaudio>
+<body nobackground text="green" onload="animate()">
+<bgsound src="../audio/polyzoot-full.rmf" LOOP>
+<center>
+<marquee>
+<h1>BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV BEBTV</h1>
+</marquee>
+<br>
+<div id="animator" style="position:absolute; top:200; left:300;">
+<img src=../img/bebtv.gif>
+</div>
+
+</center>
+</body>
+</html>

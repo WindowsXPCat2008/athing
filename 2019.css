@@ -64,7 +64,7 @@ div.desc {
   clear: both;
 }
 /* end of gallery CSS */
-table, th, td {
+table, th, td, tr {
   border-collapse: collapse;
   text-align: center;
   color: white;
